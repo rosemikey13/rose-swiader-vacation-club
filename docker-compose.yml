@@ -1,15 +1,30 @@
 version: "3.9"
 services:
     web:
+        container_name: web
         build:
             context: .
-            Dockerfile: ./Dockerfile.frontend
-    ports:
-        - "80:80"
+            dockerfile: ./Dockerfile.frontend
+        ports:
+            - "80:80"
     web-server:
-        image: node:lts
+        container_name: web-server
+        build: 
+            context: ./backend
+            dockerfile: Dockerfile.backend
+        ports:
+            - "3000:3000"
+        depends_on:
+            - mongoDB            
     mongoDB:
+        container_name: mongoDB
+        ports:
+            - "27017:27017"
         image: mongo:6
         environment:
             MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
             MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+        volumes:
+            - mongo_data:/data/db
+volumes:
+    mongo_data:

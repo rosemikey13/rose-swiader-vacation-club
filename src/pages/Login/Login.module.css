@@ -1,0 +1,62 @@
+.background{
+    background-image: url('../../assets/beach.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.signIn{
+    width: 47rem;
+    height: 34rem;
+    background-color: #FFEA29;
+    border-radius: 4rem;
+    box-shadow: .9rem 1.25rem 2.25rem .6rem rgba(0, 0, 0, 0.25);
+    border: .20rem solid #eb9d00;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    height: 11rem;
+    width: 11rem;
+    filter: drop-shadow(0 .25rem 0 rgba(0, 0, 0, 0.25));
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.textField{
+    width: 16.5rem;
+    height:3rem;
+    border-radius: .63rem;
+    border: none;
+    box-shadow: -8px 7px 20px -1px rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    background: #FEFFBB;
+    font-family: 'Roboto', cursive;
+    font-size: large;
+    text-indent: 1rem;
+}
+
+.loginButton{
+    width: 11.6rem;
+    height: 3.6rem;
+    background: #FFA800;
+    box-shadow: -7px 7px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin-top: 3rem;
+   cursor: pointer;
+   transition: transform 100ms ease-in;
+}
+
+.loginButton:hover{
+    transform: scale(1.1);
+    
+}

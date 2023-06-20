@@ -1,6 +1,9 @@
-:root {
-    background-color: rgb(250, 250, 94);
+#root, :root, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
+
 
 .mainPage {
     height: 900px;

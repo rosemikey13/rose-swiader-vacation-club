@@ -3,9 +3,14 @@ FROM node:lts AS build
 WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "./"]
+
 RUN npm ci
 
 COPY . .
+
+RUN ls -al
+
+RUN cat package.json
 
 EXPOSE 3000
 

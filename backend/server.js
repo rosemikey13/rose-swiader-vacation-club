@@ -23,4 +23,15 @@ mongoose.connection.on('connected', () => {
     console.log('Disconnected from MongoDB');
   });
 
+  app.post('/signin', (req, res, next) => {
+
+    res.send(200);
+
+  });
+
+  app.post('/signup', (req, res, next) => {
+
+    
+  })
+
 app.listen(3000);

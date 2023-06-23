@@ -2,9 +2,10 @@
     display: grid;
     grid-template-columns: .5fr 1fr 1fr .5fr 1fr 1fr .5fr 1fr 1fr .5fr 1fr 1fr .5fr;
     grid-template-rows: 1fr 1fr;
+    margin-top: 4rem;
 }
 
-.week_1, .week_2, .day_1, .day_2, .hour_1, .hour_2, .minute_1, .minute_2{
+.week_1, .week_2, .day_1, .day_2, .hour_1, .hour_2, .minute_1, .minute_2 {
 height: 13rem;
 width: 8.3rem;
 background: #FFF493;
@@ -51,4 +52,70 @@ color: #000000;
 
 .minute_2{
     grid-column: 12;
+}
+
+.secContainer{
+    grid-column: 13;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Knewave';
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    color: #000000;
+
+}
+
+.seconds{
+    width: 6.5rem;
+    height: 5rem;
+    border-radius: 12px;
+    border: 11px solid #DD9200;
+    background: #FFF493;
+    box-shadow: 9px 14px 13px 6px #865800 inset;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec{
+    font-family: 'Knewave';
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: -0.24px;
+    color: #5C4800;
+}
+
+.weeks, .days, .hours, .minutes{
+    grid-row: 2;
+    justify-self: center;
+    font-family: 'Knewave';
+    font-weight: 400;
+    font-size: 86px;
+    letter-spacing: -0.005em;
+    color: #5C4800;
+}
+
+
+.weeks{
+    grid-column: 2/4;
+}
+
+.days{
+    grid-column: 5/7;
+}
+
+.hours{
+    grid-column: 8/10;
+}
+
+.minutes{
+    grid-column: 11/13;
 }

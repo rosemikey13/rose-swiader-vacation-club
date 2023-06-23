@@ -6,6 +6,8 @@ import { AuthContext } from './context/auth-context'
 import Home from './pages/Home/Home'
 import { useNavigate } from 'react-router-dom';
 
+
+
 function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);

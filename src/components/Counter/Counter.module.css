@@ -1,9 +1,9 @@
-h3{
+h3, h2{
     margin: 0;
 }
 
 .container{
-    height: 60rem;
+    height: 75rem;
     width: 104rem;
     background: #FECC1D;
     border: 11px solid #FFA800;
@@ -14,7 +14,6 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
 }
 
 .header{
@@ -28,4 +27,12 @@ h3{
 
 img{
     margin-top: 2rem;
+}
+
+.location{
+    color: #000;
+text-align: center;
+font-size: 174px;
+font-family: Knewave;
+letter-spacing: -2.61px;
 }

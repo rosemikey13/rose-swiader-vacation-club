@@ -10,10 +10,15 @@ const Timer = (props) => {
     const [hours, setHours] = useState('00');
     const [minutes, setMinutes] = useState('00');
     const [seconds, setSeconds] = useState('00');
-    
+
+    const vacayTime = new Date(props.startTime).getTime();
+    let timer;
+
     useEffect(() => {
+         timer = setInterval(() =>{
+
+        
         const currentTime = new Date().getTime();
-        const vacayTime = new Date(props.startTime).getTime();
         
         let timeLeft = vacayTime - currentTime;
         const weeks = Math.floor(timeLeft / 1000 / 60 / 60 / 24 / 7)
@@ -34,6 +39,12 @@ const Timer = (props) => {
         timeLeft = timeLeft - (minutes * 60 * 1000);
         const seconds = Math.floor(timeLeft / 1000);
         setSeconds(seconds.toString());
+        }, 1000)
+
+        return () => {
+            window.clearInterval(timer);
+          };
+
     }, [])
 
     return(

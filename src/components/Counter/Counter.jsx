@@ -6,7 +6,7 @@ const Counter = (props) => {
     return (
 
         <div className={styles.container}>
-            <img src={map} />
+            <img className={styles.map} src={map} />
             <h3 className={styles.header}>Vacation Countdown</h3>
             <Timer startTime={props.startTime} />
             <h2 className={styles.location}>Until {props.location}!</h2>

@@ -13,7 +13,8 @@ const NavBar = () => {
         <div className={styles.nav}>
         <img src={logo} className={styles.logo}/>
         <nav>
-        <NavLink className={styles.link}to="/itinerary">Itinerary</NavLink>
+        <NavLink className={styles.link} to="/">Home</NavLink>
+        <NavLink className={styles.link} to="/itinerary">Itinerary</NavLink>
         <NavLink className={styles.link} to="/flights">Flights</NavLink>
         <NavLink className={styles.link} to="/about">About</NavLink>
         </nav>
